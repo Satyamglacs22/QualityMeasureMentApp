@@ -222,7 +222,8 @@ namespace QuantityMeasurementAppServices.Services
 
         private (string token, DateTime expiresAt) GenerateJwtToken(UserEntity user)
         {
-            string jwtKey = _configuration["Jwt:Key"]
+            string jwtKey = Environment.GetEnvironmentVariable("JWT_KEY") 
+                ?? _configuration["Jwt:Key"]
                 ?? throw new InvalidOperationException("JWT Key not configured");
 
             var key         = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
