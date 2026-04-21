@@ -12,7 +12,7 @@ COPY QuantityMeasurementAppServices/*.csproj ./QuantityMeasurementAppServices/
 COPY QuantityMeasurementApp.Tests/*.csproj ./QuantityMeasurementApp.Tests/
 
 # Restore dependencies
-RUN dotnet restore
+RUN dotnet restore QuantityMeasurementWebApi/QuantityMeasurementWebApi.csproj
 
 # Copy all the remaining source code
 COPY . ./
