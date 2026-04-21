@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuantityMeasurementWebApi</name>
+    </assembly>
+    <members>
+        <member name="T:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController">
+            <summary>
+            REST API for quantity measurement operations
+            </summary>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.Compare(QuantityMeasurementAppModels.DTOs.QuantityInputRequest)">
+            <summary>
+            Compare two quantities for equality
+            </summary>
+            <remarks>
+            
+            </remarks>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.Convert(QuantityMeasurementAppModels.DTOs.ConvertRequest)">
+             <summary>
+             Convert a quantity to a different unit
+             </summary>
+             <remarks>
+             Example request:
+            
+                 
+            
+             </remarks>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.Add(QuantityMeasurementAppModels.DTOs.ArithmeticRequest)">
+             <summary>
+             Add two quantities together
+             </summary>
+             <remarks>
+            
+            
+             </remarks>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.Subtract(QuantityMeasurementAppModels.DTOs.ArithmeticRequest)">
+            <summary>
+            Subtract one quantity from another
+            </summary>
+            <remarks>
+            
+            </remarks>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.Divide(QuantityMeasurementAppModels.DTOs.QuantityInputRequest)">
+             <summary>
+             Divide one quantity by another (returns dimensionless ratio)
+             </summary>
+             <remarks>
+             Example request:
+            
+                 POST /api/v1/quantities/divide
+                 {
+                     "thisQuantityDTO": { "value": 2.0, "unitName": "Feet", "measurementType": "Length" },
+                     "thatQuantityDTO": { "value": 1.0, "unitName": "Feet", "measurementType": "Length" }
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.GetHistoryByOperation(System.String)">
+            <summary>
+            Get operation history filtered by operation type
+            </summary>
+            <param name="operation">Operation name: Add, Subtract, Divide, Compare, Convert</param>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.GetHistoryByType(System.String)">
+            <summary>
+            Get history filtered by measurement type
+            </summary>
+            <param name="type">Measurement type: Length, Weight, Volume, Temperature</param>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.GetErrorHistory">
+            <summary>
+            Get all records that resulted in an error
+            </summary>
+        </member>
+        <member name="M:QuantityMeasurementWebApi.Controllers.QuantityMeasurementController.GetOperationCount(System.String)">
+            <summary>
+            Get count of successful operations by operation type
+            </summary>
+            <param name="operation">Operation name: Add, Subtract, Divide, Compare, Convert</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,52 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementAppModels", "QuantityMeasurementAppModels\QuantityMeasurementAppModels.csproj", "{51B21BBF-A0ED-46E9-A1D5-1A06BAE2AA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementAppBusiness", "QuantityMeasurementAppBusiness\QuantityMeasurementAppBusiness.csproj", "{952CEFF2-A5D4-461B-87CB-7CA2ECF37F95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementAppRepositories", "QuantityMeasurementAppRepositories\QuantityMeasurementAppRepositories.csproj", "{C6A1D119-3ED3-4926-9CE5-54093039CA47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementAppServices", "QuantityMeasurementAppServices\QuantityMeasurementAppServices.csproj", "{2E889FB9-FD3B-4859-8C3C-82A2125AAAA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementWebApi", "QuantityMeasurementWebApi\QuantityMeasurementWebApi.csproj", "{D1EDE943-2E1C-4F45-94BD-AE74CCBA8394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementApp.Tests", "QuantityMeasurementApp.Tests\QuantityMeasurementApp.Tests.csproj", "{BFF75C40-DCA5-5A7B-B3CB-EA83D3CE7B3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51B21BBF-A0ED-46E9-A1D5-1A06BAE2AA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B21BBF-A0ED-46E9-A1D5-1A06BAE2AA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B21BBF-A0ED-46E9-A1D5-1A06BAE2AA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B21BBF-A0ED-46E9-A1D5-1A06BAE2AA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{952CEFF2-A5D4-461B-87CB-7CA2ECF37F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952CEFF2-A5D4-461B-87CB-7CA2ECF37F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952CEFF2-A5D4-461B-87CB-7CA2ECF37F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952CEFF2-A5D4-461B-87CB-7CA2ECF37F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A1D119-3ED3-4926-9CE5-54093039CA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A1D119-3ED3-4926-9CE5-54093039CA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A1D119-3ED3-4926-9CE5-54093039CA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A1D119-3ED3-4926-9CE5-54093039CA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E889FB9-FD3B-4859-8C3C-82A2125AAAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E889FB9-FD3B-4859-8C3C-82A2125AAAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E889FB9-FD3B-4859-8C3C-82A2125AAAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E889FB9-FD3B-4859-8C3C-82A2125AAAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1EDE943-2E1C-4F45-94BD-AE74CCBA8394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1EDE943-2E1C-4F45-94BD-AE74CCBA8394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1EDE943-2E1C-4F45-94BD-AE74CCBA8394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1EDE943-2E1C-4F45-94BD-AE74CCBA8394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF75C40-DCA5-5A7B-B3CB-EA83D3CE7B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF75C40-DCA5-5A7B-B3CB-EA83D3CE7B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF75C40-DCA5-5A7B-B3CB-EA83D3CE7B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF75C40-DCA5-5A7B-B3CB-EA83D3CE7B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
