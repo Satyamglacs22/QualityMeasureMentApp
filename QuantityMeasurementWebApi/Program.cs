@@ -17,8 +17,18 @@ string jwtKey = Environment.GetEnvironmentVariable("JWT_KEY")
     ?? "DevelopmentOnlyInsecureKeyDoNotUseInProd12345!";
 
 // ================== DATABASE ==================
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// Render sets the PostgreSQL connection string as a URL: postgres://user:pass@host/db
+if (!string.IsNullOrEmpty(connectionString) && connectionString.StartsWith("postgres://"))
+{
+    var databaseUri = new Uri(connectionString);
+    var userInfo = databaseUri.UserInfo.Split(':');
+    connectionString = $"Host={databaseUri.Host};Port={(databaseUri.IsDefaultPort ? 5432 : databaseUri.Port)};Username={userInfo[0]};Password={userInfo[1]};Database={databaseUri.LocalPath.TrimStart('/')};Pooling=true;";
+}
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
 
 // ================== DEPENDENCY INJECTION ==================
 builder.Services.AddScoped<IQuantityRecordRepository, QuantityRecordRepository>();
